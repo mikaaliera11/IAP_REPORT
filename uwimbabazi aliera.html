@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script> 
+<script>
+// Function to perform the search
+function performSearch() {
+    
+    var searchTerm = document.getElementById("searchInput").value;
+    
+    document.getElementById("searchResults").innerText = "You searched for: " + searchTerm;
+}
+
+document.getElementById("searchButton").addEventListener("click", performSearch);
+</script>
+
+
+
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		
+		nav{
+			background-color: maroon;
+			height: 2cm;
+			width: 50cm;
+			margin-left: -10px;
+			margin-top: -9px;
+		
+		}
+		input{
+			height: 1cm;
+			width: 5cm;
+			margin-left: 16cm;
+			border-radius: 10px;
+
+		}
+		button{
+			height: 1cm;
+			width: 2cm;
+			border-radius: 10px;
+			background-color: yellow;
+		}
+		a{
+			color: white;
+			margin-left: 1.5cm;
+		}
+
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>uwimbabazi aliera</title>
+</head>
+<body>
+<nav>
+	<a href="1.html"> home</a>
+    <a href="6.html">about us</a>
+    <a href="3.html">	servise</a>
+    <a href="2.html">	contact</a>
+    <input type="text" id="searchInput" placeholder="Type your search term"class="fa fa-search" required>
+    <button id="searchButton"  class="fa fa-search">Search</button>
+<div id="searchResults"></div>
+</nav>
+</body>
+</html>
